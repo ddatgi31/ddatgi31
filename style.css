@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Nanum+Gothic+Coding&family=Noto+Serif+KR:wght@200..900&family=Orbit&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6e3e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.tab-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-btn {
+    background-color: #262626;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 8px;
+    padding: 9px 16px;
+    font-size: 12px;
+    font-weight: medium;
+    cursor: pointer;
+}
+
+.content-card {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon {
+    width: 15px;
+    height: 10px;
+    vertical-align: middle;
+}
+
+.profile-username {
+    font: 15px /1 "Roboto Mono";
+    color: #000000;
+}
+
+.profile-subtext {
+    font: 13px /1 "Nanum Gothic Coding";
+    margin-top: 3px;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+.sns img{
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+code {
+    font-family: inherit;
+    background-color:  #edeaea;
+    color: #f20606;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.profile-bio {
+    margin-top: -20px;
+    font: 12px /1 "Nanum Gothic Coding";
+    color: #000000;
+    letter-spacing: -0.3px;
+    word-spacing: -2px;
+    line-height: 1.2;
+    white-space: pre-line;
+}
+
+.bio-subject {
+    margin-bottom: -11px;
+    font: 500 12px /1 "Chiron GoRound TC";
+}
+
+
+.tab-title{
+    font: bold 20px "Malgun Gothic";
+    color: #ac0101;
+}
+
+.timeline {
+    position: relative;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25px;
+    width: 2px;
+    background-color: #e6e3e0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 36px;
+    height: 20px;
+    background-color: #262626;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.timeline-panel {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.fandom-category {
+    margin-bottom: 12px;
+}
+
+.fandom-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.fandom-category p {
+    margin: 0;
+    font: 12px /1 "Nanum Gothic Coding";
+    letter-spacing: -0.3px;
+    word-spacing: -2px;
+    line-height: 1.2;    color: #252525;
+    word-break: keep-all;
+    margin-bottom: -10px;
+}
+
+.fandom-category li {
+    font: 12px /1 "Nanum Gothic Coding";
+    letter-spacing: -0.3px;
+    word-spacing: -2px;
+    line-height: 1.2;    color: #252525;
+    word-break: keep-all;
+}
+
+.fandom-category img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.fandoms-img img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 80%;
+    height: auto;
+}
+
+/*탭 활성화*/
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
